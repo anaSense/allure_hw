@@ -1,9 +1,9 @@
 name: test
 
-on: [push]
+on: workflow_dispatch
 
 jobs:
-  check-bats-version:
+  test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
